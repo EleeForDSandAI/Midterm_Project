@@ -22,7 +22,7 @@ Help the user to learn about the capital cities in a playful and less energy con
 # User Requirements:
 - The program keeps working in a loop:
     - Once the program is run, the prompt asks the person to enter the name of the country
-    - If the user enters the string ‘quit’ the program stops
+    - If the user enters the string ‘quit’ or an empty string '', the program stops.
     - While entering the country name, the program accepts values without capitalization errors.
 
 - The program outputs the sting value that is the capital of the country
