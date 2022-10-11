@@ -39,7 +39,7 @@ while True:
         if query_country in the_world:
             result = the_world[query_country]
             messagebox.showinfo('Answer', 'The capital city of ' + query_country + ' is ' + result + '!')
-        elif query_country == 'Quit':
+        elif query_country == 'Quit' or query_country == '':
             break
         else:
             new_city = simpledialog.askstring('Teach me', 'I don\' know!' + 'What is the capital city of ' + query_country + '?')
@@ -47,3 +47,4 @@ while True:
             write_to_file(query_country, capitalizedstring(new_city))
     except AttributeError:
         continue
+    root.mainloop()
