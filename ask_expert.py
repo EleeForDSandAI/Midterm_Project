@@ -1,3 +1,14 @@
+""" Welcome to the interactive brain training game - Ask the expert!
+The reason this name was chosen is that everyone is expert at something
+or have a great potential to be so ...
+
+This version of this game only works with capital cities of the countries
+across the world (which does not require to work with huge sets of data).
+
+However, the ideas used in this project could also be applied in broader
+extent to construct systems that grow and develop through collecting and 
+manipulating various data types."""
+
 from tkinter import Tk, simpledialog, messagebox
 from sys import *
 print('Ask the Expert - Capital Cities of the World')
