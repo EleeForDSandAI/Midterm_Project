@@ -36,7 +36,7 @@ def capitalizedstring(word):
 while True:          
         query_country = simpledialog.askstring('Country', 'Type the name of a country:')
         if query_country == None or query_country == 'quit' or query_country == '':
-            sys.exit()
+            exit()
         query_country = capitalizedstring(query_country)
         if query_country in the_world:
             result = the_world[query_country]
