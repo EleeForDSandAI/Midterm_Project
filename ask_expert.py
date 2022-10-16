@@ -25,30 +25,33 @@ def read_from_file():
             country, city = line.split('/')
             the_world[country] = city
 
-read_from_file()
 
 def write_to_file(country_name, city_name):
     with open('capitals_data.txt', 'a') as file:
         file.write('\n' + country_name + '/' + city_name)
 
-def capitalize(string):
-    return string.capitalize()
+## These are funtions constructed before I review .title() method
 
-def capitalizedstring(word):
-    the_country = list(map(capitalize, word.split()))
-    string = ''
-    for i in range(len(the_country)):
-        if i == len(the_country) - 1:
-            string += the_country[i]
-        else:
-            string += the_country[i] + ' '
-    return string
+# def capitalize(string):
+#     return string.capitalize()
+
+# def capitalizedstring(word):
+#     the_country = list(map(capitalize, word.split()))
+#     string = ''
+#     for i in range(len(the_country)):
+#         if i == len(the_country) - 1:
+#             string += the_country[i]
+#         else:
+#             string += the_country[i] + ' '
+#     return string
+
+read_from_file()
 
 while True:          
         query_country = simpledialog.askstring('Country', 'Type the name of a country:')
         if query_country == None or query_country == 'quit' or query_country == '':
             exit()
-        query_country = capitalizedstring(query_country)
+        query_country = query_country.title()
         if query_country in the_world:
             result = the_world[query_country]
             messagebox.showinfo('Answer', 'The capital city of ' + query_country + ' is ' + result + '!')
@@ -56,5 +59,5 @@ while True:
             new_city = simpledialog.askstring('Teach me', 'I don\' know!' + 'What is the capital city of ' + query_country + '?')
             if new_city == None:
                 continue
-            the_world[query_country] = capitalizedstring(new_city)
-            write_to_file(query_country, capitalizedstring(new_city))
+            the_world[query_country] = new_city.title()
+            write_to_file(query_country, new_city.title())

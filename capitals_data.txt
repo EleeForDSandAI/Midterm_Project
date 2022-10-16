@@ -231,7 +231,7 @@ Tuvalu/Funafuti
 Uganda/Kampala
 Ukraine/Kiev
 United Arab Emirates/Abu Dhabi
-United Kingdom; England/London
+United Kingdom/London
 United States/Washington, D.C.
 United States Virgin Islands/Charlotte Amalie
 Uruguay/Montevideo
@@ -246,3 +246,4 @@ Western Sahara/El Aaiún
 Yemen/Sanaá
 Zambia/Lusaka
 Zimbabwe/Harare
+United States Of America/Washington, D.c.
