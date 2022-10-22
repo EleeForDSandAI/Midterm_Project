@@ -5,6 +5,12 @@ This repository contains all the necessary files:
 - readme file
 - the code itself
 
+## All of these in Git
+https://github.com/EleeForDSandAI/Midterm_Project
+
+## Link for the video on YouTube
+https://youtu.be/LY2MGoON7b0
+
 ## The small project called - Ask the expert!
 
 The Project Topic: The user becomes an expert at telling countries’ capital cities and teaches the program if it doesn’t know by running this program.
